@@ -16,3 +16,23 @@ function loadPostMsg() {
         .then(response => response.text())
         .then(text => document.getElementById("postResult").innerHTML = text); 
 }
+
+function loadHelloMsg() {
+    let url = "/app/hello";
+    fetch(url, { method: 'GET' })
+        .then(response => response.json())  
+        .then(data => {
+            
+            document.getElementById("static1").innerHTML = data.response;
+        });
+}
+
+function loadPiMsg() {
+    let url = "/app/pi";
+    fetch(url, { method: 'GET' })
+        .then(response => response.json())  
+        .then(data => {
+            
+            document.getElementById("static2").innerHTML = data.response;
+        });
+}

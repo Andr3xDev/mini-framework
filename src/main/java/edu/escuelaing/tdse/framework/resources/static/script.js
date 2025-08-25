@@ -18,7 +18,7 @@ function loadPostMsg() {
 }
 
 function loadHelloMsg() {
-    let url = "/app/hello";
+    let url = "/app/hellow";
     fetch(url, { method: 'GET' })
         .then(response => response.json())  
         .then(data => {

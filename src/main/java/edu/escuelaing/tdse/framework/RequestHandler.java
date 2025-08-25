@@ -17,6 +17,7 @@ import java.util.function.BiFunction;
  * </p>
  */
 public class RequestHandler {
+
     private final Socket clientSocket;
     private String ruta;
     PrintWriter out;

@@ -8,6 +8,25 @@ import java.util.HashMap;
 import java.util.function.BiFunction;
 import java.util.logging.Logger;
 
+/**
+ * HttpServer is a simple HTTP server framework that allows registering RESTful
+ * GET and POST services,
+ * as well as serving static files. It listens for incoming HTTP requests on a
+ * specified port and delegates
+ * request handling to the RequestHandler class.
+ * 
+ * <p>
+ * Features:
+ * <ul>
+ * <li>Register GET and POST endpoints using {@link #get(String, BiFunction)}
+ * and {@link #post(String, BiFunction)}.</li>
+ * <li>Serve static files from a configurable resource path using
+ * {@link #staticFiles(String)}.</li>
+ * <li>Start and stop the server with {@link #startServer()} and
+ * {@link #stopServer()}.</li>
+ * </ul>
+ * </p>
+ */
 public class HttpServer {
 
     // Loger from Lombok
